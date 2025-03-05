@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Teaching Plan</h1>
+    </header>
+
+    <nav>
+        <div class="menu" id="menuButton">☰ Menu</div>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="index.html">Home</a>
+            <a href="Teaching and classroom management.html">Teaching and classroom management</a>
+            <a href="Coordination in workplace.html">Coordination in workplace</a>
+            <a href="Personal development.html">Personal development</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>Weekly Plan</h2>
+        <p>Placeholder for teaching plan text.</p>
+
+        <h2>Assignments</h2>
+        <p>Placeholder for assignment text.</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Aleksandr Pterov - All Rights Reserved
+    </footer>
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+            }
+        });
+
+        // Hide dropdown when clicking outside of the menu
+        document.addEventListener('click', function(event) {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            const menuButton = document.getElementById('menuButton');
+            if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
