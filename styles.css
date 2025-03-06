@@ -120,6 +120,12 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
+.lightbox_photo {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 .header_1{
     text-align: center;
@@ -129,8 +135,15 @@ body {
 
 .header_2{
     text-align: center;
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.header_3{
+    text-align: center;
+    font-size: 28px;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .dream {
@@ -144,14 +157,52 @@ body {
     justify-content: center;
 }
 .typical_photo {
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
 }
 
+.typical_photo_2 {
+    width: 35%;
+    height: 35%;
+
+}
 .text_container {
-    font-size: 28px;
+    font-size: 24px;
     padding-left: 20px;
     text-align: center;
     font-weight: bold;
-    color: White;
+    color: Black;
+    margin-bottom: 30px;
+}
+
+.video_container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.caption {
+    width: 100%; 
+    font-size:24px; 
+    text-align:center; 
+    padding-bottom: 5px;
+}
+.cert_container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.cert_caption {
+    width: 100%; 
+    font-size:24px; 
+    text-align:center; 
+    padding-bottom: 5px;
+}
+.center_photo {
+    width: 70%;
+    height: 70%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 40px;
 }

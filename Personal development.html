@@ -9,13 +9,13 @@
 <body>
 
     <header>
-        <h1>Teaching Plan</h1>
+        <h1 class="header_1">Coordination in Workplace</h1>
     </header>
 
     <nav>
         <div class="menu" id="menuButton">☰ Menu</div>
         <div class="dropdown" id="dropdownMenu">
-            <a href="index.html">Home</a>
+            <a href="index.html">Personal Information</a>
             <a href="Teaching and classroom management.html">Teaching and classroom management</a>
             <a href="Coordination in workplace.html">Coordination in workplace</a>
             <a href="Personal development.html">Personal development</a>
@@ -23,35 +23,80 @@
     </nav>
 
     <div class="content">
-        <h2>Weekly Plan</h2>
-        <p>Placeholder for teaching plan text.</p>
+            <h2 class="header_2">Gamification and ICT - innovative teaching methods</h2>
+            <div class="image_container">
+                <img class="typical_photo" src="Photos/Certificate.png"/> 
+                
+                <div class="text_container">
+                    <p>
+                        The seminar is aimed at helping ESL teachers create engaging,
+                     interactive lessons using technology, making language learning more effective.
+                    </p>
+                </div>
+                
+            </div>  
+            <p>MWS 02.10.2024</p>
 
-        <h2>Assignments</h2>
-        <p>Placeholder for assignment text.</p>
+            <h2 class="header_2">Building Blocks of Grammar and Vocabulary</h2>
+            <div class="image_container">
+                <img class="typical_photo" src="Photos/Certificate2.png"/> 
+                
+                <div class="text_container">
+                    <p>
+                        Seminar focuses on strategies for teaching grammar and vocabulary, including structured lesson planning, contextual learning techniques, and interactive activities to enhance student engagement and language retention. 
+
+                    </p>
+                </div>
+                
+            </div>  
+            <p>Macmillan Education 14.02.2025
+            </p>
+
+            <h2 class="header_2">Leveraging Player Psychology: Learning from Player Motivation in Gaming
+            </h2>
+            <div class="image_container">
+                <img class="typical_photo" src="Photos/Certificate3.png"/> 
+                
+                <div class="text_container">
+                    <p>
+                        I learned how to apply player motivation principles from gaming—such as challenge, rewards, and engagement—to enhance student learning, foster motivation, and create more interactive and immersive classroom experiences. 
+
+
+                    </p>
+                </div>
+                
+            </div>  
+            <p>Macmillan Education 17.02.2025
+            </p>
+
+            <h2 class="header_2">Proven Strategies to Get English Learners Speaking</h2>
+            <div class="image_container">
+                <img class="typical_photo" src="Photos/Certificate5.jpg"/>      
+                <div class="text_container">
+                    <p>
+                        I learned effective strategies to encourage English learners to speak confidently, including interactive activities, scaffolding techniques, and creating a supportive, low-anxiety learning environment. 
+                    </p>
+                </div> 
+            </div>  
+            <p>ED Web 03.03.2025</p>
+
+            <h2 class="header_2">Multilingual Instructional Practices to Promote Access for All Readers</h2>
+            <div class="image_container">
+                <img class="typical_photo" src="Photos/Certificate4.jpg"/>      
+                <div class="text_container">
+                    <p>
+                        I learned how to implement multilingual instructional practices that support learners by incorporating culturally responsive materials and innovative methods to enhance reading comprehension and engagement. 
+                    </p>
+                </div> 
+            </div>  
+            <p>ED Web 03.03.2025</p>
     </div>
+
 
     <footer>
         &copy; 2025 Aleksandr Pterov - All Rights Reserved
     </footer>
 
-    <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            if (dropdownMenu.style.display === 'block') {
-                dropdownMenu.style.display = 'none';
-            } else {
-                dropdownMenu.style.display = 'block';
-            }
-        });
-
-        // Hide dropdown when clicking outside of the menu
-        document.addEventListener('click', function(event) {
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            const menuButton = document.getElementById('menuButton');
-            if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                dropdownMenu.style.display = 'none';
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
