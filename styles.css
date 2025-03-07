@@ -1,7 +1,7 @@
 /* Style for the header */
 
 body {
-    background-image: linear-gradient(to right, rgba(173, 167, 167, 0), rgb(121, 45, 45));
+    background-image: linear-gradient(to right, rgba(173, 167, 167, 0), rgb(175, 88, 88));
 }
 
 header {
@@ -14,6 +14,7 @@ header {
 .about-me{
     text-align: center;
     font-size: 22px;
+    font-family: sans-serif;
 }
 .heading{
     text-align: center;
@@ -33,7 +34,7 @@ header {
     background-image: linear-gradient(to right, rgba(166, 162, 228, 0), rgb(146, 121, 121));
 }
 .menu {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     font-size: 24px;
@@ -43,13 +44,17 @@ header {
 /* Style for the dropdown menu */
 .dropdown {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 10px;
     background-color: white;
     border: 1px solid #ccc;
 }
 
+.dropdown img {
+    height: 100px;
+    margin: 20px;
+}
 .dropdown a {
     display: block;
     padding: 10px;
@@ -76,8 +81,8 @@ header {
 }
 
 .placeholder-photo {
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    height: 30%;
     margin-bottom: 320px;
 }
 
@@ -131,19 +136,22 @@ body {
     text-align: center;
     font-size: 36px;
     margin-bottom: 80px;
+    font-family: serif;
 }
 
 .header_2{
     text-align: center;
     font-size: 32px;
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: serif;
 }
 .header_3{
     text-align: center;
     font-size: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 20px;
+    font-family: serif;
 }
 
 .dream {
@@ -161,16 +169,23 @@ body {
     height: 35%;
 }
 
-.typical_photo_2 {
-    width: 35%;
-    height: 35%;
+.typical_photo2 {
+    width: 45%;
+    height: 45%;
 
+}
+.text_under_cert {
+    width: 35%;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 .text_container {
     font-size: 24px;
     padding-left: 20px;
-    text-align: center;
-    font-weight: bold;
+    text-align: justify;
+    text-indent: 50px;
+    font-family: serif;
     color: Black;
     margin-bottom: 30px;
 }
