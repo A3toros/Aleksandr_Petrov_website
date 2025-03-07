@@ -78,7 +78,8 @@ header {
 
 /* Style for the content */
 .content {
-    margin: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -225,7 +226,6 @@ body {
 }
 .text_container {
     font-size: 24px;
-    padding-left: 20px;
     text-align: justify;
     text-indent: 50px;
     font-family: serif;
