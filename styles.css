@@ -15,7 +15,6 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 #dropdown-list {
@@ -72,6 +71,35 @@ body {
     background-image: linear-gradient(to right, rgba(173, 167, 167, 0), rgb(175, 88, 88));
 }
 
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #b7aeec;
+    color: rgb(5, 5, 5);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+table {
+    width: 60%; /* Set table width to 60% of the screen */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Ensure borders collapse into one */
+}
+
+td, th {
+    border: 1px solid black; /* Add borders to all cells */
+    padding: 8px; /* Add some padding for better readability */
+    text-align: left; /* Align text to the left */
+}
+
+td:last-child {
+    width: 25%; /* Make the last column wider */
+}
+
 header {
     position:fixed
     background-color: #f8f8f8;
@@ -107,13 +135,7 @@ header {
 #table1 tbody tr:nth-child(even) {
     background-image: linear-gradient(to right, rgba(166, 162, 228, 0), rgb(146, 121, 121));
 }
-.menu {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
+
 
 /* Style for the dropdown menu */
 .dropdown {
