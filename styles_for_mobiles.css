@@ -69,6 +69,71 @@
     cursor: pointer;
     font-size: 24px;
 }
+#dropdown-container2 {
+    position: relative; /* Ensures dropdown positioning respects the layout */
+    margin-bottom: 20px; /* Adds space below dropdown to prevent overlap */
+}
+#dropdown-button2 {
+    padding: 20px;
+    margin-left: 10%;
+    font-size: 24px; /* Make the text larger */
+    background-color: #007bff; /* A nice blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dropdown-list2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 60px; /* Adjust this to the button's height + some space */
+    left: 10%;
+    display: none;
+    z-index: 10; /* Ensures dropdown appears above other content */
+}
+
+#dropdown-list2 li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+#dropdown-list2 li:hover {
+    background: #f1f1f1;
+}
+
+/* The expanded text will now follow the website's existing styles */
+#expanded-text2 {
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 20px; /* Add padding for better spacing */
+    font-size: 20px; /* Adjust font size if necessary */
+    line-height: 1.6; /* Improve readability */
+    background-color: transparent; /* Keeps it consistent with the page */
+    color: inherit; /* Uses the same text color as the page */
+    width: auto; /* Adjusts the width according to content */
+    max-width: 100%; /* Ensures it doesn't overflow the container */
+    text-align: justify; /* Align text to the left, modify if needed */
+}
+
+#hide-text-button2 {
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 10%;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
 .menu {
     position: fixed;
     top: 10px;

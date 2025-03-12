@@ -67,6 +67,72 @@
     cursor: pointer;
     font-size: 24px;
 }
+
+#dropdown-container2 {
+    position: relative; /* Ensures dropdown positioning respects the layout */
+    margin-bottom: 20px; /* Adds space below dropdown to prevent overlap */
+}
+#dropdown-button2 {
+    padding: 20px;
+    margin-left: 10%;
+    font-size: 24px; /* Make the text larger */
+    background-color: #007bff; /* A nice blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dropdown-list2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 60px; /* Adjust this to the button's height + some space */
+    left: 10%;
+    display: none;
+    z-index: 10; /* Ensures dropdown appears above other content */
+}
+
+#dropdown-list2 li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+#dropdown-list2 li:hover {
+    background: #f1f1f1;
+}
+
+/* The expanded text will now follow the website's existing styles */
+#expanded-text2 {
+    margin-top: 20px;
+    margin-left: 10%;
+    padding: 20px; /* Add padding for better spacing */
+    font-size: 20px; /* Adjust font size if necessary */
+    line-height: 1.6; /* Improve readability */
+    background-color: transparent; /* Keeps it consistent with the page */
+    color: inherit; /* Uses the same text color as the page */
+    width: auto; /* Adjusts the width according to content */
+    max-width: 100%; /* Ensures it doesn't overflow the container */
+    text-align: justify; /* Align text to the left, modify if needed */
+}
+
+#hide-text-button2 {
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 10%;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
 body {
     background-image: linear-gradient(to right, rgba(173, 167, 167, 0), rgb(175, 88, 88));
 }
@@ -85,20 +151,21 @@ body {
     
 }
 table {
-    width: 60%; /* Set table width to 60% of the screen */
+ 
     margin: 20px auto; /* Center the table horizontally */
-    border-collapse: collapse; /* Ensure borders collapse into one */
+
+    border: 2px solid black; /* Outer border */
 }
 
-td, th {
-    border: 1px solid black; /* Add borders to all cells */
-    padding: 8px; /* Add some padding for better readability */
-    text-align: left; /* Align text to the left */
+tr, td {
+    border: 2px solid black; /* Borders for all cells */
+    padding: 10px; /* Spacing inside cells */
+    text-align: justify; /* Align text to the left */
 }
 
-td:last-child {
-    width: 25%; /* Make the last column wider */
-}
+
+
+
 
 header {
     position:fixed
@@ -122,21 +189,39 @@ header {
     text-align: center;
     font-size: 26px;
 }
-#table1 table, tr, td, th {
+.table1,
+table.table1 table, tr, td, th {
     border: 0;
-    width: 50%;
+    
 }
 
-#table1 tbody tr:nth-child(odd) {
+.table1,
+table.table1 tbody tr:nth-child(odd) {
     background-image: linear-gradient(to right, rgba(188, 201, 214, 0), rgb(230, 101, 78));
    
 }
-
-#table1 tbody tr:nth-child(even) {
+.table1,
+table.table1 tbody tr:nth-child(even) {
     background-image: linear-gradient(to right, rgba(166, 162, 228, 0), rgb(146, 121, 121));
 }
 
-
+.table2,
+table.table2 {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table2,
+table.table2 td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+  text-indent: 15px;
+}
+.table2,
+table.table2 tr:nth-child(even) {
+  background-color: #dddddd;
+}
 /* Style for the dropdown menu */
 .dropdown {
     display: none;
